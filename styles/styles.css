@@ -1,0 +1,207 @@
+/* General Styles */
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    background: white; /* White background for the entire page */
+    
+  }
+  
+  /* Sidebar Navigation */
+  .sidebar {
+    width: 250px;
+    background: #f4f4f4; /* Light gray background for sidebar */
+    padding: 2rem 1rem;
+    position: fixed;
+    height: 100%;
+    border-right: 1px solid #e5e5e5; /* Subtle border for separation */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  }
+  
+  .sidebar .logo img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the logo */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align navigation links to the left */
+  }
+  
+  .sidebar ul li {
+    margin: 1.5rem 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #0078d4; /* Microsoft blue for links */
+    font-size: 1rem;
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.2s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #005a9e; /* Darker blue on hover */
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 250px; /* Match sidebar width */
+    padding: 2rem 4rem; /* More padding for better spacing */
+    width: calc(100% - 250px); /* Adjust width to account for sidebar */
+    background: white; /* White background for main content */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the main content */
+  }
+  
+  .breadcrumbs {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #0078d4; /* Microsoft blue for links */
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a; /* Darker text for headings */
+    font-weight: 600; /* Bold heading */
+  }
+  
+  .introduction {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #444; /* Slightly lighter text for introduction */
+    line-height: 1.8;
+  }
+  
+  .features .feature {
+    margin-bottom: 3rem;
+  }
+  
+  .features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a; /* Darker text for headings */
+    font-weight: 600; /* Bold heading */
+  }
+  
+  .features p {
+    font-size: 1rem;
+    color: #444; /* Slightly lighter text for paragraphs */
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #e5e5e5; /* Subtle border for images */
+    border-radius: 6px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+  }
+  
+  .features a {
+    color: #0078d4; /* Microsoft blue for links */
+    text-decoration: none;
+    font-weight: 500; /* Slightly bold */
+  }
+  
+  .features a:hover {
+    text-decoration: underline;
+  }
+  
+  .callout {
+    background: #f9f9f9; /* Light gray background for callouts */
+    padding: 1.5rem;
+    border-left: 4px solid #0078d4; /* Blue accent border */
+    margin: 2rem 0;
+    border-radius: 4px; /* Rounded corners for callouts */
+  }
+  
+  .callout p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444; /* Slightly lighter text for callouts */
+    line-height: 1.8;
+  }
+
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-right: none;
+      border-bottom: 1px solid #e5e5e5; /* Add border for mobile view */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow for mobile */
+    }
+  
+    .main-content {
+      margin-left: 0;
+      padding: 1.5rem;
+      width: 100%; /* Full width on mobile */
+    }
+
+  
+  }
+
+  /* Center and constrain images in the editor and preview */
+.ql-editor img,
+#preview img {
+  display: block; /* Ensure images are block-level elements */
+  max-width: 100%; /* Constrain image width to the container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 6px; /* Rounded corners for images */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+}
+
+/* Ensure the editor and preview sections don't overflow */
+.ql-editor,
+#preview {
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+#indexList ul {
+  padding-left: 1em;
+  margin-top: 0.25em;
+}
+
+#indexList li ul li {
+  font-size: 0.95em;
+  padding-left: 10px;
+  list-style-type: circle;
+}
+
+.collapsible-toggle {
+  font-weight: bold;
+  display: block;
+}
+.collapsible-content h3 {
+  margin-left: 1rem;
+}
+
+
